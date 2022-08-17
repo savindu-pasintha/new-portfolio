@@ -648,7 +648,7 @@ export const info = {
       source: 'https://github.com/savindu-pasintha/youtubeClone',
       image: mock2,
       imagesUrl: [
-        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/youtube%20clone%2F1.PNG?alt=media&token=85296b9b-599b-4eeb-a7ab-e0104ca1bb37',
+        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/youtube%20clone%2F2.PNG?alt=media&token=77a7899d-15ff-44ad-904b-d0f87fd86453',
       ],
     },
     {
