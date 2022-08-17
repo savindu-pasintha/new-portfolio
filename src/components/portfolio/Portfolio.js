@@ -14,6 +14,7 @@ export default function Portfolio() {
               imagesUrl={project?.imagesUrl || []}
               usedModules={project?.usedModules || []}
               technologies={project?.technologies || []}
+              summery={project?.summery || ''}
               imageList={[
                 {
                   id: 1,
@@ -63,13 +64,6 @@ export default function Portfolio() {
               live={project.live}
               source={project.source}
               title={project.title}
-              summery=" Beats Health React web site In here I did React and python based
-              on projects and previous project maintenance. The main project is
-              a 'Beats Health' Hospital management system. Aws Lambda
-              function,S3,Mongodb Git bucket they used as a version control
-              system React Material UI , React Boostrap and multiple
-              technologies 'Beats Health' Hospital management system.
-           "
             />
           </Grid>
         ))}

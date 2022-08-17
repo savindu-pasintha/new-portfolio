@@ -27,8 +27,8 @@ of what each of the values mean.
 export const info = {
   firstName: 'Savindu',
   lastName: 'Pasintha',
-  initials: 'Js+Java+C# ..', // the example uses first and last, but feel free to use three or more if you like.
-  position: 'a Full Stack Developer',
+  initials: 'React+Js+Java+C# ..', // the example uses first and last, but feel free to use three or more if you like.
+  position: 'a Software Developer',
   selfPortrait: self1, // don't change this unless you want to name your self-portrait in the "img" folder something else!
   gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
   baseColor: colors[0],
@@ -102,7 +102,7 @@ export const info = {
     // Just change the links so that they lead to your social profiles.
   ],
   bio:
-    "Hello! I'm John. I'm a systems engineer for Google. I studied CompSci at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
+    "Hello! I'm John. I studied Computing and Software Engineering at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
   skills: {
     proficientWith: [
       'javascript',
@@ -140,28 +140,35 @@ export const info = {
     // This is where your portfolio projects will be detailed
     {
       id: 1,
-      title: 'Beats Health(USA)',
-      summery: '',
+      title: 'React Web Application `Beats Health`(for USA)',
+      summery:
+        'This One is a React Frontend and .NET Backend based on Hospital Management Dashboard.',
       technologies: [
-        'javascript',
         'react',
+        'javascript',
+        '@mui/Material Design',
+        '@material-ui',
+        'axios',
+        'REST Service',
+        'react-time-picker',
+        'react-select',
+        'react-phone-input-2',
+        'react-toastify',
+        'react-modal',
+        'material-table',
+        'react-collapsible',
+        'react-base64-downloader',
         'git',
         'github',
         'bootstrap',
         'html5',
         'css3',
         'figma',
+        '.net',
+        'c#',
+        'Pdf downloads',
       ],
-      usedModules: [
-        'javascript',
-        'react',
-        'git',
-        'github',
-        'bootstrap',
-        'html5',
-        'css3',
-        'figma',
-      ],
+      usedModules: ['date-fns', 'responsive', 'aws sdk', 'sass'],
       live: '', //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
       source: '', // this should be a link to the **repository** of the project, where the code is hosted.
       image: mock1,
@@ -177,29 +184,22 @@ export const info = {
     },
     {
       id: 2,
-      title: 'VPS1 (USA)',
-      summery: '',
+      title: 'Veritas Petroleum Services Static Web Site (for USA)',
+      summery:
+        'Thsi Project for Veritas Petroleum Services(vps). They do world wide OIL testing and report generation.',
       technologies: [
         'javascript',
-        'react',
-        'git',
+        'Html',
+        'Jquery',
         'github',
         'bootstrap',
-        'html5',
-        'css3',
-        'figma',
+        'SEO',
+        'Pdf downloads',
+        'charts',
+        'Maps',
       ],
-      usedModules: [
-        'javascript',
-        'react',
-        'git',
-        'github',
-        'bootstrap',
-        'html5',
-        'css3',
-        'figma',
-      ],
-      live: '',
+      usedModules: [],
+      live: 'https://www.vpsveritas.com',
       source: '',
       image: mock2,
       imagesUrl: [
@@ -211,7 +211,8 @@ export const info = {
     },
     {
       id: 3,
-      title: 'VPS Muti-Functional React Dashboard (USA Petrolium)',
+      title:
+        'ReactJs Multi Functional Dashboard  (Veritas Petroleum Services USA)',
       summery: '',
       technologies: [
         'javascript',
@@ -255,6 +256,49 @@ export const info = {
         'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/VPS%20React%20Dashboard%2F16.PNG?alt=media&token=b3401a70-53cf-483a-a8f3-4dd0e0ec3461',
         'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/VPS%20React%20Dashboard%2F17.PNG?alt=media&token=148e5bc4-9b2c-467c-891a-011f8ab22b46',
       ],
+    },
+    {
+      id: 4,
+      title: 'QT GUI C++ Desktop Application(China)',
+      summery:
+        'This Project for the `Elastic Quality Checking Software Solution`',
+      technologies: [
+        'c++',
+        'QT Framework',
+        'IOT',
+        'QML',
+        'CSS',
+        'Electric Motors',
+        'Camera',
+        'Lights',
+      ],
+      usedModules: [''],
+      live: '',
+      source: '',
+      image: mock2,
+      imagesUrl: [''],
+    },
+    {
+      id: 5,
+      title: '',
+      summery: '',
+      technologies: [''],
+      usedModules: [''],
+      live: '',
+      source: '',
+      image: mock2,
+      imagesUrl: [''],
+    },
+    {
+      id: 6,
+      title: '',
+      summery: '',
+      technologies: [''],
+      usedModules: [''],
+      live: '',
+      source: '',
+      image: mock2,
+      imagesUrl: [''],
     },
   ],
   education: [

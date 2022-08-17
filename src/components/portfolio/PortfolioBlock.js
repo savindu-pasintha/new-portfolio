@@ -36,41 +36,45 @@ function PortfolioBlock(props) {
   ]
   function SimpleAccordion() {
     return (
-      <div>
-        <Accordion>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-          >
-            <Technologies />
-          </AccordionSummary>
-          <AccordionDetails>
-            <h3>{summery}</h3>
-            <UsedModules />
-            <SourceCodeAndLiveDemo />
-          </AccordionDetails>
-        </Accordion>
-      </div>
+      //<Box sx={{ width: 1 / 2 }}>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Technologies />
+        </AccordionSummary>
+        <AccordionDetails>
+          <h3>{summery}</h3>
+          <UsedModules />
+          <SourceCodeAndLiveDemo />
+        </AccordionDetails>
+      </Accordion>
+      // </Box>
     )
   }
   const Technologies = () => {
     return (
-      <Stack direction="row" spacing={1} s>
+      //<Stack direction="row" sx={{ width: '50%' }} spacing={1} s>
+      <Box sx={{ width: 1 }}>
         {technologies.map((item, index) => {
-          return (
-            <Chip
-              key={index}
-              label={item}
-              color={chipsColors.at(
-                (Math.random(chipsColors.length) * 10).toFixed(),
-              )}
-              //variant="outlined"
-              onClick={() => {}}
-            />
-          )
+          if (item != '' && item != null)
+            return (
+              <Chip
+                sx={{ margin: '2px' }}
+                key={index}
+                label={item}
+                color={chipsColors.at(
+                  (Math.random(chipsColors.length) * 10).toFixed(),
+                )}
+                //variant="outlined"
+                onClick={() => {}}
+              />
+            )
         })}
-      </Stack>
+      </Box>
+      //</Stack>
     )
   }
   const SourceCodeAndLiveDemo = () => {
@@ -134,21 +138,25 @@ function PortfolioBlock(props) {
 
   const UsedModules = () => {
     return (
-      <Stack direction="row" spacing={1} style={{ paddingTop: '1%' }}>
+      // <Stack direction="row" spacing={1} style={{ paddingTop: '1%' }}>
+      <Box sx={{ width: 1 / 2 }}>
         {usedModules.map((item, index) => {
-          return (
-            <Chip
-              key={index}
-              label={item}
-              color={chipsColors.at(
-                (Math.random(chipsColors.length) * 10).toFixed(),
-              )}
-              //variant="outlined"
-              onClick={() => {}}
-            />
-          )
+          if (item != '' && item != null)
+            return (
+              <Chip
+                key={index}
+                label={item}
+                color={chipsColors.at(
+                  (Math.random(chipsColors.length) * 10).toFixed(),
+                )}
+                //variant="outlined"
+                onClick={() => {}}
+                sx={{ margin: '2px' }}
+              />
+            )
         })}
-      </Stack>
+      </Box>
+      //</Stack>
     )
   }
   useEffect(() => {}, [loadImages])
@@ -163,12 +171,16 @@ function PortfolioBlock(props) {
       <h1 style={{ fontSize: '2rem', padddingTop: '2%', paddingBottom: '1%' }}>
         {title}
       </h1>
-      <SimpleAccordion summery="sssss" live="kkkkk" source="dddd" />
-      <Box
-        component={'img'}
-        /*src={image}*/ src={loadImages ? loadImages : imagesUrl[0]}
-        alt={'mockup'}
-      />
+      <SimpleAccordion />
+      {(loadImages != null && loadImages != '') || imagesUrl[0] != '' ? (
+        <Box
+          component={'img'}
+          src={loadImages ? loadImages : imagesUrl[0]}
+          alt={'mockup'}
+        />
+      ) : (
+        ''
+      )}
       <Box
         display={'flex'}
         flexDirection={'column'}
