@@ -90,6 +90,7 @@ function PortfolioBlock(props) {
       >
         {live != '' && source != null ? (
           <Box p={1}>
+            Live
             <IconLink link={live} title={''} icon={'fa fa-safari'} />
           </Box>
         ) : (
@@ -97,6 +98,7 @@ function PortfolioBlock(props) {
         )}
         {source != '' && source != null ? (
           <Box p={1} /**border={'2px solid black'} borderRadius={'25px'} */>
+            Code{' '}
             <IconLink
               color="red"
               link={source}
