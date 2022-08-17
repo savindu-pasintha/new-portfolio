@@ -88,12 +88,25 @@ function PortfolioBlock(props) {
         fontSize={'1.5rem'}
         py={'2rem'}
       >
-        <Box p={1}>
-          <IconLink link={live} title={''} icon={'fa fa-safari'} />
-        </Box>
-        <Box p={1} /**border={'2px solid black'} borderRadius={'25px'} */>
-          <IconLink color="red" link={source} title={''} icon={'fa fa-code'} />
-        </Box>
+        {live != '' && source != null ? (
+          <Box p={1}>
+            <IconLink link={live} title={''} icon={'fa fa-safari'} />
+          </Box>
+        ) : (
+          ''
+        )}
+        {source != '' && source != null ? (
+          <Box p={1} /**border={'2px solid black'} borderRadius={'25px'} */>
+            <IconLink
+              color="red"
+              link={source}
+              title={''}
+              icon={'fa fa-code'}
+            />
+          </Box>
+        ) : (
+          ''
+        )}
       </Box>
     )
   }
