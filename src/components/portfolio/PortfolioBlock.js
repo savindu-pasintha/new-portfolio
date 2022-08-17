@@ -37,7 +37,7 @@ function PortfolioBlock(props) {
   function SimpleAccordion() {
     return (
       //<Box sx={{ width: 1 / 2 }}>
-      <Accordion>
+      <Accordion sx={{ width: 1 }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -46,7 +46,7 @@ function PortfolioBlock(props) {
           <Technologies />
         </AccordionSummary>
         <AccordionDetails>
-          <h3>{summery}</h3>
+          <h2>{summery}</h2>
           <UsedModules />
           <SourceCodeAndLiveDemo />
         </AccordionDetails>
@@ -101,8 +101,9 @@ function PortfolioBlock(props) {
     return (
       <div className="flexcontainer">
         {imagesUrl.map((item, index) => {
-          return (
-            /*
+          if (item != '' && item != null)
+            return (
+              /*
           <button
             onClick={() => {
               setLoadImages(item)
@@ -113,24 +114,24 @@ function PortfolioBlock(props) {
           >
             {index + 1}
           </button>*/
-            <Chip
-              key={index}
-              style={{
-                border: 'none',
-                margin: '1px',
-              }}
-              label={index + 1}
-              /*color={chipsColors.at(
+              <Chip
+                key={index}
+                style={{
+                  border: 'none',
+                  margin: '1px',
+                }}
+                label={index + 1}
+                /*color={chipsColors.at(
               (Math.random(chipsColors.length) * 10).toFixed(),
             )}*/
-              color="primary"
-              //variant="outlined"
-              onClick={() => {
-                setLoadImages(item)
-                console.log(item)
-              }}
-            />
-          )
+                color="primary"
+                //variant="outlined"
+                onClick={() => {
+                  setLoadImages(item)
+                  console.log(item)
+                }}
+              />
+            )
         })}
       </div>
     )
@@ -139,7 +140,7 @@ function PortfolioBlock(props) {
   const UsedModules = () => {
     return (
       // <Stack direction="row" spacing={1} style={{ paddingTop: '1%' }}>
-      <Box sx={{ width: 1 / 2 }}>
+      <Box sx={{ width: 1 }}>
         {usedModules.map((item, index) => {
           if (item != '' && item != null)
             return (
@@ -168,28 +169,49 @@ function PortfolioBlock(props) {
       alignItems={'center'}
       style={{ padding: '10px' }}
     >
-      <h1 style={{ fontSize: '2rem', padddingTop: '2%', paddingBottom: '1%' }}>
+      <h1
+        style={{
+          fontSize: '2rem',
+          height: '80px',
+          padddingTop: '2%',
+          paddingBottom: '1%',
+        }}
+      >
         {title}
       </h1>
       <SimpleAccordion />
-      {(loadImages != null && loadImages != '') || imagesUrl[0] != '' ? (
-        <Box
-          component={'img'}
-          src={loadImages ? loadImages : imagesUrl[0]}
-          alt={'mockup'}
-        />
+
+      {imagesUrl.length > 0 && imagesUrl[0] != '' ? (
+        <>
+          <Box
+            sx={{ height: '300px', width: 1, backgroundColor: 'white' }}
+            justifyContent={'center'}
+            alignItems={'center'}
+          >
+            <Box
+              component={'img'}
+              src={loadImages ? loadImages : imagesUrl[0]}
+              alt={''}
+              sx={{ height: '300px', width: 'auto' }}
+            />
+          </Box>
+        </>
       ) : (
         ''
       )}
-      <Box
-        display={'flex'}
-        flexDirection={'column'}
-        justifyContent={'left'}
-        alignItems={'left'}
-        style={{ padding: '1%' }}
-      >
-        <ImageButtons />
-      </Box>
+      {imagesUrl.length > 0 ? (
+        <Box
+          display={'flex'}
+          flexDirection={'column'}
+          justifyContent={'left'}
+          alignItems={'left'}
+          style={{ padding: '1%' }}
+        >
+          <ImageButtons />
+        </Box>
+      ) : (
+        ''
+      )}
     </Box>
   )
 }
