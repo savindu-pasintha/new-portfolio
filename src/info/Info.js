@@ -27,8 +27,8 @@ of what each of the values mean.
 export const info = {
   firstName: 'Savindu',
   lastName: 'Pasintha',
-  initials: 'React+Js+Java+C# ..', // the example uses first and last, but feel free to use three or more if you like.
-  position: 'a Software Developer',
+  initials: '', //'React+Js+Java+C# ..', // the example uses first and last, but feel free to use three or more if you like.
+  position: 'Software Developer',
   selfPortrait: self1, // don't change this unless you want to name your self-portrait in the "img" folder something else!
   gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
   baseColor: colors[0],
@@ -36,7 +36,7 @@ export const info = {
     // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
     {
       emoji: '',
-      text: '+ 3.5 Year ',
+      text: '+ 3.5 Year Experince',
     },
     {
       emoji: '☕',
@@ -102,8 +102,64 @@ export const info = {
     // Just change the links so that they lead to your social profiles.
   ],
   bio:
-    "Hello! I'm John. I studied Computing and Software Engineering at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
+    "Hello! I'm Savindu Pasintha. I studied at Computing and Software Engineering at Cardiff Metropolitan, University, Uk. Priviously,  3.5 years back I worked as a self thought software developer with Multiple orgarnizations in the world wide . Like India , Singappor, United kindom , sri  lanka , Africa , Nigeria , Morocco , Canada, and more ..., So I have greate experince about the software development industry with multiple areas and I am Good team player including with multiple tech stacks.",
   skills: {
+    coding: [
+      '🌱 JavaScript',
+      '🌱 Typescript',
+      '🌱 Java',
+      '🌱 C#',
+      ' 🌱 C++',
+      '🌱 Dart',
+      '🌱 Kotlin ',
+      '🌱 PHP',
+      '🌱 Python',
+      '🌱 Go',
+      '🌱 Solidity',
+    ],
+    backend: [
+      'NodeJs',
+      'Express',
+      'Springboot',
+      '.Net Core',
+      'Django',
+      'Go',
+      'GraphQL',
+      ' Elastic Search',
+      'Socket.io ',
+      'Web-Sockets',
+      'REST API Integration',
+      'JWT',
+      'OAuth',
+      'OpenID',
+    ],
+    frontend: [
+      'Reactjs',
+      'Angular',
+      ' Nextjs',
+      ' Vuejs',
+      ' Laravel',
+      'Micro-Frontend ',
+      'Figma-UI',
+      'Adobe-UI',
+      'HTML',
+      'CSS',
+      'SCSS',
+      'Bootstrap',
+      'JQuery',
+      'Material-Design',
+      'Ant-Design',
+      'WordPress',
+      'SEO',
+      'Block-Chain',
+      'Cripto',
+      'web3',
+      'Metamask',
+    ],
+    mobile: ['Android', 'Java', 'Kotlin', 'React-Native', 'Dart', 'Flutter'],
+    desktop: ['C++ QT Framework', 'C# .NET Framework', 'Java '],
+    database: ['SQL', 'MySql', 'SqlLite', 'MongoDB', 'Firebase ', 'Nosql'],
+    cloud: ['AWS', 'AZURE', 'Google Cloud'],
     proficientWith: [
       'javascript',
       'react',
@@ -118,8 +174,20 @@ export const info = {
   },
   hobbies: [
     {
-      label: 'reading',
+      label: 'programing',
       emoji: '📖',
+    },
+    {
+      label: 'researching new technologies',
+      emoji: '🎭',
+    },
+    {
+      label: 'self learning',
+      emoji: '🎥',
+    },
+    {
+      label: 'designing',
+      emoji: '🌶',
     },
     {
       label: 'theater',
@@ -136,79 +204,94 @@ export const info = {
     // Same as above, change the emojis to match / relate to your hobbies or interests.
     // You can also remove the emojis if you'd like, I just think they look cute :P
   ],
-  portfolio: [
-    // This is where your portfolio projects will be detailed
+  education: [
     {
       id: 1,
-      title: 'React Web Application `Beats Health`(for USA)',
-      summery:
-        'This One is a React Frontend and .NET Backend based on Hospital Management Dashboard.',
-      technologies: [
-        'react',
-        'javascript',
-        '@mui/Material Design',
-        '@material-ui',
-        'axios',
-        'REST Service',
-        'react-time-picker',
-        'react-select',
-        'react-phone-input-2',
-        'react-toastify',
-        'react-modal',
-        'material-table',
-        'react-collapsible',
-        'react-base64-downloader',
-        'git',
-        'github',
-        'bootstrap',
-        'html5',
-        'css3',
-        'figma',
-        '.net',
-        'c#',
-        'Pdf downloads',
-      ],
-      usedModules: ['date-fns', 'responsive', 'aws sdk', 'sass'],
-      live: '', //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-      source: '', // this should be a link to the **repository** of the project, where the code is hosted.
-      image: mock1,
-      imagesUrl: [
-        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/Beats%20Health%20Project%2F1.PNG?alt=media&token=8dcdabfd-cc08-4065-a668-b7d3fc96fd83',
-        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/Beats%20Health%20Project%2F2.PNG?alt=media&token=3ec4c0ca-ad20-4c98-bbf0-acfd5a163d99',
-        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/Beats%20Health%20Project%2F3.PNG?alt=media&token=fc58babf-c406-4f87-bd24-0c41253933af',
-        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/Beats%20Health%20Project%2F4.PNG?alt=media&token=41cd8063-437b-4b95-a2d5-6708af3e4a76',
-        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/Beats%20Health%20Project%2F5.PNG?alt=media&token=77898f88-bb84-49f0-bcf3-dd7579856b35',
-        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/Beats%20Health%20Project%2F6.PNG?alt=media&token=b2a5463d-559d-40b2-9b05-a4afa278b3a9',
-        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/Beats%20Health%20Project%2F7.PNG?alt=media&token=7cd2f811-2052-4c9d-8c49-ea5e4f7a6b29',
-      ],
+      what: 'BSC(Hons) Computing & Software Engineering',
+      where: 'Cardiff Metropolitan, University, Uk',
+      time: ' 2019 - May 2021',
+      grade: "1'st Class",
     },
     {
       id: 2,
-      title: 'Veritas Petroleum Services Static Web Site (for USA)',
-      summery:
-        'This Project for Veritas Petroleum Services(vps). They do world wide OIL testing and report generation.',
-      technologies: [
-        'javascript',
-        'Html',
-        'Jquery',
-        'github',
-        'bootstrap',
-        'SEO',
-        'Pdf downloads',
-        'charts',
-        'Maps',
-      ],
-      usedModules: [],
-      live: 'https://www.vpsveritas.com',
-      source: '',
-      image: mock2,
-      imagesUrl: [
-        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/VPS%20Frontend%20web%20site%20html%2F1.PNG?alt=media&token=3c9d13c9-cf95-4253-b492-b3763fbc2e46',
-        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/VPS%20Frontend%20web%20site%20html%2F2.PNG?alt=media&token=504a3384-e448-48a9-95c3-4de6bfb686e2',
-        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/VPS%20Frontend%20web%20site%20html%2F3.PNG?alt=media&token=8482bfa7-c97b-4b90-8c48-760821c12bce',
-        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/VPS%20Frontend%20web%20site%20html%2F4.PNG?alt=media&token=4b3a82ec-4545-4e29-b721-6103e004b5ee',
-      ],
+      what: 'Higher National Diploma in Computing & Software Engineering',
+      where: 'International College Of Business & Technology, Sri Lanka',
+      time: ' 2019 - 2021',
+      grade: "1'st Class",
     },
+    {
+      id: 3,
+      what: 'Certificate In Computer Hardware & Network',
+      where:
+        'Foundation of Goodness OYOB Centre of Excellence, Sinigama , Sri Lanka',
+      time: 'Jan 2019 - July 2019 ',
+      grade: '',
+    },
+    {
+      id: 4,
+      what: 'High School (GCE Advanced Level(GCE A/L))',
+      where: 'National School, Ananada Sastralaya, Mathugama, Sri Lanaka',
+      time: '2015 - August 2018',
+      grade: `Physical Science Stream  (Physics/Combine Maths/Chemistry)`,
+    },
+    {
+      id: 5,
+      what: 'Primary School (GCE Ordinary Level(GCE O/L))',
+      where: 'National School, Ananada Sastralaya, Mathugama, Sri Lanaka',
+      time: '2010 - 2015',
+      grade: `8A & 1B`,
+    },
+  ],
+  workHistory: [
+    {
+      id: 1,
+      role: 'Software Engineer-Frontend  (Remote)',
+      company: 'X.O CONCEPTS (PRIVATE) LIMITED',
+      location: 'No 30/81- 1/1 ,Longdon Place , Colombo 07 , Sri Lanka.',
+      time: '2022',
+      summery:
+        'React Multifunctional Dashboard & Desktop Applications Development using ReactJs / Node Js / Go / C++ / QT Framework / AWS / Micro services / Material / Html / CSS / Bosstrap / Style Components /Mysql / REST API / Python / Machine Learning / IOT Devices /git lab / git bucket..',
+    },
+    {
+      id: 2,
+      role: 'Freelance Software Developer (Remote)',
+      company: 'Natobotics Technologies Pvt Ltd.',
+      location:
+        '#1206, 12th Floor, D-South Block, Tidel Park, Rajiv Gandhi Salai, Taramani, Chennai 600 113, india',
+      time: '2021',
+      summery:
+        'React Multifunctional Dashboard Development / Static Web sites /REST API / ReactJS Framework / Javascript / Typescript /Html / CSS / Boostrap /ANT Design / Material Design / Mysql / MondoDB / Azure / Clould / C# / .Net Framework / .Net core api / Python / Webscraping /github / git lab',
+    },
+    {
+      id: 3,
+      role: 'Associate Software Engineer (Remote)',
+      company: 'Nvision IT Solutions (PVT) Limited',
+      location: '10 Kumarage Watta Road, Sri Jayawardenepura Kotte,Sri Lanka',
+      time: '2020',
+      summery:
+        'Mobile applications development and Web applications development with Java / React Native / Flutter /git lab / git hub /Rest Services /Sqlite database / Mysql /Jet pack /room database / AWS ',
+    },
+    {
+      id: 4,
+      role: 'Associate DevOPS Engineer (Remote)',
+      company: 'Global Wavenet International Pvt Ltd , Singappore',
+      time: '2019',
+      location: '',
+      summery:
+        'USSD & IVR(Interact voice response) Systems Development AWS / NodeJs / Javascript / kapanga Tool / System Design / Machine Learning / gitbucket ',
+    },
+    {
+      id: 1,
+      role: 'Freelance Software Developer',
+      company: 'Upwork.com & Fiver.com',
+      location: '',
+      time: '2018',
+      summery:
+        'Full stack web & mobile applications development & Mobile app reverse engineering',
+    },
+  ],
+  portfolio: [
+    // This is where your portfolio projects will be detailed
     {
       id: 3,
       title:
@@ -286,26 +369,77 @@ export const info = {
       ],
     },
     {
-      id: 4,
-      title: 'QT GUI C++ Desktop Application(China)',
+      id: 1,
+      title: 'React Web Application `Beats Health`(for USA)',
       summery:
-        'This Project for the `Elastic Quality Checking Software Solution`',
+        'This One is a React Frontend and .NET Backend based on Hospital Management Dashboard.',
       technologies: [
-        'c++',
-        'QT Framework',
-        'IOT',
-        'QML',
-        'CSS',
-        'Electric Motors',
-        'Camera',
-        'Lights',
+        'react',
+        'javascript',
+        '@mui/Material Design',
+        '@material-ui',
+        'axios',
+        'REST Service',
+        'react-time-picker',
+        'react-select',
+        'react-phone-input-2',
+        'react-toastify',
+        'react-modal',
+        'material-table',
+        'react-collapsible',
+        'react-base64-downloader',
+        'git',
+        'github',
+        'bootstrap',
+        'html5',
+        'css3',
+        'figma',
+        '.net',
+        'c#',
+        'Pdf downloads',
       ],
-      usedModules: [''],
-      live: '',
+      usedModules: ['date-fns', 'responsive', 'aws sdk', 'sass'],
+      live: '', //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+      source: '', // this should be a link to the **repository** of the project, where the code is hosted.
+      image: mock1,
+      imagesUrl: [
+        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/Beats%20Health%20Project%2F1.PNG?alt=media&token=8dcdabfd-cc08-4065-a668-b7d3fc96fd83',
+        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/Beats%20Health%20Project%2F2.PNG?alt=media&token=3ec4c0ca-ad20-4c98-bbf0-acfd5a163d99',
+        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/Beats%20Health%20Project%2F3.PNG?alt=media&token=fc58babf-c406-4f87-bd24-0c41253933af',
+        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/Beats%20Health%20Project%2F4.PNG?alt=media&token=41cd8063-437b-4b95-a2d5-6708af3e4a76',
+        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/Beats%20Health%20Project%2F5.PNG?alt=media&token=77898f88-bb84-49f0-bcf3-dd7579856b35',
+        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/Beats%20Health%20Project%2F6.PNG?alt=media&token=b2a5463d-559d-40b2-9b05-a4afa278b3a9',
+        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/Beats%20Health%20Project%2F7.PNG?alt=media&token=7cd2f811-2052-4c9d-8c49-ea5e4f7a6b29',
+      ],
+    },
+    {
+      id: 2,
+      title: 'Veritas Petroleum Services Static Web Site (for USA)',
+      summery:
+        'This Project for Veritas Petroleum Services(vps). They do world wide OIL testing and report generation.',
+      technologies: [
+        'javascript',
+        'Html',
+        'Jquery',
+        'github',
+        'bootstrap',
+        'SEO',
+        'Pdf downloads',
+        'charts',
+        'Maps',
+      ],
+      usedModules: [],
+      live: 'https://www.vpsveritas.com',
       source: '',
       image: mock2,
-      imagesUrl: [''],
+      imagesUrl: [
+        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/VPS%20Frontend%20web%20site%20html%2F1.PNG?alt=media&token=3c9d13c9-cf95-4253-b492-b3763fbc2e46',
+        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/VPS%20Frontend%20web%20site%20html%2F2.PNG?alt=media&token=504a3384-e448-48a9-95c3-4de6bfb686e2',
+        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/VPS%20Frontend%20web%20site%20html%2F3.PNG?alt=media&token=8482bfa7-c97b-4b90-8c48-760821c12bce',
+        'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/VPS%20Frontend%20web%20site%20html%2F4.PNG?alt=media&token=4b3a82ec-4545-4e29-b721-6103e004b5ee',
+      ],
     },
+
     {
       id: 5,
       title:
@@ -664,6 +798,27 @@ export const info = {
       imagesUrl: [''],
     },
     {
+      id: 4,
+      title: 'QT GUI C++ Desktop Application(China)',
+      summery:
+        'This Project for the `Elastic Quality Checking Software Solution`',
+      technologies: [
+        'c++',
+        'QT Framework',
+        'IOT',
+        'QML',
+        'CSS',
+        'Electric Motors',
+        'Camera',
+        'Lights',
+      ],
+      usedModules: [''],
+      live: '',
+      source: '',
+      image: mock2,
+      imagesUrl: [''],
+    },
+    {
       id: 6,
       title: '',
       summery: '',
@@ -673,44 +828,6 @@ export const info = {
       source: '',
       image: mock2,
       imagesUrl: [''],
-    },
-  ],
-  education: [
-    {
-      id: 1,
-      what: 'BSC(Hons) Computing & Software Engineering',
-      where: 'Cardiff Metropolitan, University, Uk',
-      time: ' 2019 - May 2021',
-      grade: "1'st Class",
-    },
-    {
-      id: 2,
-      what: 'Higher National Diploma in Computing & Software Engineering',
-      where: 'International College Of Business & Technology, Sri Lanka',
-      time: ' 2019 - 2021',
-      grade: "1'st Class",
-    },
-    {
-      id: 3,
-      what: 'Certificate In Computer Hardware & Network',
-      where:
-        'Foundation of Goodness OYOB Centre of Excellence, Sinigama , Sri Lanka',
-      time: 'Jan 2019 - July 2019 ',
-      grade: '',
-    },
-    {
-      id: 4,
-      what: 'High School (GCE Advanced Level(GCE A/L))',
-      where: 'National School, Ananada Sastralaya, Mathugama, Sri Lanaka',
-      time: '2015 - August 2018',
-      grade: `Physical Science Stream  (Physics/Combine Maths/Chemistry)`,
-    },
-    {
-      id: 5,
-      what: 'Primary School (GCE Ordinary Level(GCE O/L))',
-      where: 'National School, Ananada Sastralaya, Mathugama, Sri Lanaka',
-      time: '2010 - 2015',
-      grade: `8A & 1B`,
     },
   ],
 }

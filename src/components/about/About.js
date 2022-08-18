@@ -3,11 +3,12 @@ import Style from './About.module.scss'
 import Terminal from './Terminal'
 import { Box } from '@mui/material'
 import { info } from '../../info/Info'
-
+import Chip from '@mui/material/Chip'
 export default function About() {
+  const chipsColors = ['primary', 'error', 'info', 'success', 'warning']
   const firstName = info.firstName.toLowerCase()
 
-  function educationText() {
+  function educationText({ textColor, h4 }) {
     return (
       <div style={{ color: 'white' }}>
         {info?.education.map((item) => {
@@ -21,18 +22,41 @@ export default function About() {
                 padding: '5px',
               }}
             >
-              <h4 style={{ color: 'blue' }}>{item?.what}</h4>
-              <p style={{ color: 'white' }}>{item?.grade}</p>
-              <p style={{ color: 'white' }}>{item?.time}</p>
-
-              <p style={{ color: 'white' }}>{item?.where}</p>
+              <h4 style={{ color: h4 ? h4 : 'blue' }}>{item?.what}</h4>
+              <p style={{ color: textColor }}>{item?.grade}</p>
+              <p style={{ color: textColor }}>{item?.time}</p>
+              <p style={{ color: textColor }}>{item?.where}</p>
             </div>
           )
         })}
       </div>
     )
   }
-
+  function workHistoryText({ textColor, h4 }) {
+    return (
+      <div style={{ color: 'white' }}>
+        {info?.workHistory.map((item) => {
+          return (
+            <div
+              style={{
+                color: 'white',
+                border: '1px solid yellow',
+                borderRadius: '10px',
+                margin: '5px',
+                padding: '5px',
+              }}
+            >
+              <h4 style={{ color: h4 ? h4 : 'blue' }}>{item?.role}</h4>
+              <h4 style={{ color: textColor }}>{item?.company}</h4>
+              <p style={{ color: textColor }}>{item?.location}</p>
+              <p style={{ color: textColor }}>{item?.time}</p>
+              <h6 style={{ color: textColor }}>{item?.summery}</h6>
+            </div>
+          )
+        })}
+      </div>
+    )
+  }
   function aboutMeText() {
     return (
       <>
@@ -41,11 +65,11 @@ export default function About() {
             {firstName}
             {info.lastName.toLowerCase()} $
           </span>{' '}
-          cat about{firstName}{' '}
+          sudo {firstName}{' '}
         </p>
         <p>
           <span style={{ color: info.baseColor }}>
-            about{firstName} <span className={Style.green}>(main)</span> ${' '}
+            about <span className={Style.green}>(main)</span> ${' '}
           </span>
           {info.bio}
         </p>
@@ -53,6 +77,27 @@ export default function About() {
     )
   }
 
+  const SetOFSkill = ({ data, color }) => {
+    return (
+      //<Stack direction="row" sx={{ width: '50%' }} spacing={1} s>
+      <Box sx={{ width: 1 }}>
+        {data.map((item, index) => {
+          if (item != '' && item != null)
+            return (
+              <Chip
+                sx={{ margin: '2px' }}
+                key={index}
+                label={item.toLowerCase()}
+                color={color}
+                //variant="outlined"
+                onClick={() => {}}
+              />
+            )
+        })}
+      </Box>
+      //</Stack>
+    )
+  }
   function skillsText() {
     return (
       <>
@@ -64,6 +109,40 @@ export default function About() {
           cd skills/tools
         </p>
         <p>
+          <span style={{ color: info.baseColor }}>Coding :</span>
+          <SetOFSkill data={info?.skills?.coding} color="error" />
+        </p>
+        <p>
+          <span style={{ color: info.baseColor }}>Frontend Technologies :</span>
+          <SetOFSkill data={info?.skills?.frontend} color="success" />
+        </p>
+        <p>
+          <span style={{ color: info.baseColor }}>Backend Technologies :</span>
+          <SetOFSkill data={info?.skills?.backend} color="warning" />
+        </p>
+        <p>
+          <span style={{ color: info.baseColor }}>
+            Mobile Application Technologies :
+          </span>
+          <SetOFSkill data={info?.skills?.mobile} color="info" />
+        </p>
+        <p>
+          <span style={{ color: info.baseColor }}>
+            Desktop Application Technologies :
+          </span>
+          <SetOFSkill data={info?.skills?.desktop} color="warning" />
+        </p>
+        <p>
+          <span style={{ color: info.baseColor }}>
+            Datatbase Technologies :
+          </span>
+          <SetOFSkill data={info?.skills?.database} color="warning" />
+        </p>
+        <p>
+          <span style={{ color: info.baseColor }}>Clould Technologies :</span>
+          <SetOFSkill data={info?.skills?.cloud} color="primary" />
+        </p>
+        {/*<p>
           <span style={{ color: info.baseColor }}>
             skills/tools <span className={Style.green}>(main)</span> $
           </span>{' '}
@@ -80,7 +159,8 @@ export default function About() {
           {info.skills.exposedTo.map((skill, index) => (
             <li key={index}>{skill}</li>
           ))}
-        </ul>
+          </ul>
+          */}
       </>
     )
   }
@@ -123,8 +203,23 @@ export default function About() {
       mt={'3rem'}
     >
       <Terminal title="About" text={aboutMeText()} />
-      <Terminal title="Education" text={educationText()} />
-      <Terminal title="Skills" text={skillsText()} />
+      <Terminal
+        title="Skills"
+        text={skillsText()}
+        subTitle="Why You Hire Me ... "
+      />
+
+      <Terminal
+        title="Work History"
+        text={workHistoryText({ textColor: 'black', h4: 'black' })}
+        backgroundColor="#06d6a0"
+        subTitle="More than 3 1/2 Years Experince in IT industry...."
+      />
+      <Terminal
+        title="Education"
+        text={educationText({ textColor: 'black', h4: 'black' })}
+        backgroundColor="#BD93BD"
+      />
       <Terminal text={miscText()} />
     </Box>
   )

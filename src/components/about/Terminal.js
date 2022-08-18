@@ -25,13 +25,20 @@ function Terminal(props) {
         <i className={classNames(iconClass, Style.red)} />
         <i className={classNames(iconClass, Style.amber)} />
         <i className={classNames(iconClass, Style.green)} />
-        <h3>{title}</h3>
+        <h3>
+          {title}
+          <p>{props?.subTitle ? props?.subTitle : ''}</p>
+        </h3>
       </Box>
       <Box
         py={{ xs: '1rem', md: '2rem' }}
         px={{ xs: '2rem', md: '3rem' }}
         borderRadius={'0 0 0.5rem 0.5rem'}
-        sx={{ backgroundColor: '#27242f' }}
+        sx={{
+          backgroundColor: props?.backgroundColor
+            ? props?.backgroundColor
+            : '#27242f',
+        }}
         fontSize={'1.5rem'}
         fontFamily={'Courier New, Courier, monospace'}
       >

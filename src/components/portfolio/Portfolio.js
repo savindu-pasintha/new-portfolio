@@ -15,6 +15,10 @@ export default function Portfolio() {
               usedModules={project?.usedModules || []}
               technologies={project?.technologies || []}
               summery={project?.summery || ''}
+              image={project?.image}
+              live={project?.live}
+              source={project?.source}
+              title={project?.title}
               imageList={[
                 {
                   id: 1,
@@ -60,10 +64,6 @@ export default function Portfolio() {
                   ],
                 },
               ]}
-              image={project.image}
-              live={project.live}
-              source={project.source}
-              title={project.title}
             />
           </Grid>
         ))}
