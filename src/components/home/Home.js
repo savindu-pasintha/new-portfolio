@@ -9,10 +9,36 @@ import EmojiBullet from './EmojiBullet'
 import SocialIcon from './SocialIcon'
 import { Box } from '@mui/material'
 import { info } from '../../info/Info'
+import { SettingsOverscanSharp } from '@mui/icons-material'
 
 export default function Home() {
-  const tech = useRef('')
-  // useEffect(() => { setInterval(()=>{tech.current = ""},2000)}, [])
+  const [tech, setTech] = useState(
+    info?.skills?.frontend.concat(
+      info?.skills?.backend,
+      info?.skills?.coding,
+      info?.skills?.clould,
+      info?.skills?.database,
+      info?.skills?.mobile,
+      info?.skills?.desktop,
+    ),
+  )
+  const [counter, setCounter] = useState('')
+  const [now, setNow] = useState(0)
+  useEffect(() => {
+    if (now > tech.length - 1) {
+      setNow(0)
+    } else {
+      if (tech.length != 0) setCounter(tech[now])
+    }
+  }, [now])
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setNow((prevNow) => prevNow + 1)
+    }, 2000)
+
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <Box
       component={'main'}
@@ -51,7 +77,9 @@ export default function Home() {
         </h1>
         <h3>{info?.positionTop}</h3>
         <h2>{info?.position}</h2>
-        <h3>{info?.subPosition}</h3>
+        <h3>
+          {info?.subPosition} <span style={{ color: 'yellow' }}>{counter}</span>
+        </h3>
         <Box component={'ul'} p={'0.8rem'}>
           {info?.miniBio.map((bio, index) => (
             <EmojiBullet key={index} emoji={bio?.emoji} text={bio?.text} />

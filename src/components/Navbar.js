@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Style from './Navbar.module.scss'
 import Toggler from './home/Toggler'
 import { Link, useLocation } from 'react-router-dom'
@@ -61,10 +61,11 @@ export default function Navbar({ darkMode, handleClick }) {
               {!link.type && (
                 <p style={{ paddingBottom: '0.5rem' }}>{link.name}</p>
               )}
-              {link.type && <h1>{link.name}</h1>}
+              {link.type && <h1 style={{ color: 'yellow' }}>{link.name}</h1>}
             </Link>
           </Box>
         ))}
+
         <li>
           <Toggler darkMode={darkMode} handleClick={handleClick} />
         </li>

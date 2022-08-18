@@ -39,14 +39,22 @@ function PortfolioBlock(props) {
       //<Box sx={{ width: 1 / 2 }}>
       <Accordion sx={{ width: 1 }}>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={
+            <ExpandMoreIcon
+              style={{
+                color: 'black',
+                border: '1px solid black',
+                borderRadius: '100%',
+              }}
+            />
+          }
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
           <Technologies />
         </AccordionSummary>
         <AccordionDetails>
-          <h2 style={{ paddingBottom: '1%' }}>{summery}</h2>
+          <h2 style={{ paddingBottom: '1%', fontSize: '15px' }}>{summery}</h2>
           <UsedModules />
           <SourceCodeAndLiveDemo />
         </AccordionDetails>
@@ -86,7 +94,7 @@ function PortfolioBlock(props) {
         gap={'0.5rem'}
         alignItems={'align'}
         fontSize={'1.5rem'}
-        py={'2rem'}
+        py={'0rem'}
       >
         {live != '' && source != null ? (
           <Box p={0}>
@@ -191,12 +199,13 @@ function PortfolioBlock(props) {
     >
       <h1
         style={{
-          fontSize: '2rem',
-          height: '80px',
+          fontSize: '1rem',
+          height: '40px',
           padddingTop: '2%',
           paddingBottom: '1%',
         }}
       >
+        {id + 1}{`) `}
         {title}
       </h1>
       <SimpleAccordion />

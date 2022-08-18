@@ -28,7 +28,7 @@ export const info = {
   firstName: 'Savindu',
   lastName: 'Pasintha',
   initials: '*', //'React+Js+Java+C# ..', // the example uses first and last, but feel free to use three or more if you like.
-  positionTop: 'Fullsatck / Frontend engineering',
+  positionTop: 'Fullsatck / Frontend Engineering',
   position: 'Software Developer',
   subPosition: ' web/mobile',
   selfPortrait: self1, // don't change this unless you want to name your self-portrait in the "img" folder something else!
