@@ -27,34 +27,33 @@ of what each of the values mean.
 export const info = {
   firstName: 'Savindu',
   lastName: 'Pasintha',
-  initials: '', //'React+Js+Java+C# ..', // the example uses first and last, but feel free to use three or more if you like.
+  initials: '*', //'React+Js+Java+C# ..', // the example uses first and last, but feel free to use three or more if you like.
+  positionTop: 'Fullsatck',
   position: 'Software Developer',
+  subPosition: ' web/mobile',
   selfPortrait: self1, // don't change this unless you want to name your self-portrait in the "img" folder something else!
   gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
   baseColor: colors[0],
   miniBio: [
     // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
     {
-      emoji: '',
+      emoji: '🌎',
+      text: 'Finding a Job',
+    },
+    {
+      emoji: '💼',
       text: '+ 3.5 Year Experince',
     },
+
     {
       emoji: '☕',
       text: 'fueled by coffee',
     },
     {
-      emoji: '🌎',
-      text: 'based in the US',
-    },
-    {
-      emoji: '💼',
-      text: 'Software Engineer at`xo Concept, Singappore`',
-    },
-    {
       emoji: '📧',
       text: (
         <a href="mailto:savindupasingtha@gmail.com">
-          savindupasingtha@gmail.com{' '}
+          savindupasingtha@gmail.com /  +94 76 875 57 87
         </a>
       ),
     },
@@ -69,6 +68,7 @@ export const info = {
       link: 'https://github.com/savindu-pasintha',
       icon: 'fa fa-github',
       label: 'github',
+      count: '122',
     },
     {
       link: 'https://savindupasingtha.medium.com',
@@ -102,7 +102,7 @@ export const info = {
     // Just change the links so that they lead to your social profiles.
   ],
   bio:
-    "Hello! I'm Savindu Pasintha. I studied at Computing and Software Engineering at Cardiff Metropolitan, University, Uk. Priviously,  3.5 years back I worked as a self thought software developer with Multiple orgarnizations in the world wide . Like India , Singappor, United kindom , sri  lanka , Africa , Nigeria , Morocco , Canada, and more ..., So I have greate experince about the software development industry with multiple areas and I am Good team player including with multiple tech stacks.",
+    "I'm Savindu Pasintha. I studied at Computing and Software Engineering at Cardiff Metropolitan, University, Uk. Previously,  3.5 years back I worked as a self thought software developer with Multiple orgarnizations in the world wide . Like India , USA, Singappor, United kindom , Sri  lanka , Africa , Nigeria , Morocco , Canada, and more ..., So I have great experience about the software development industry with multiple areas and I am Good team player including with multiple tech stacks.",
   skills: {
     coding: [
       '🌱 JavaScript',
@@ -190,11 +190,11 @@ export const info = {
       emoji: '🌶',
     },
     {
-      label: 'theater',
+      label: 'traveling',
       emoji: '🎭',
     },
     {
-      label: 'movies',
+      label: 'freedom',
       emoji: '🎥',
     },
     {
@@ -785,18 +785,7 @@ export const info = {
         'https://firebasestorage.googleapis.com/v0/b/savindupasintha-71dd8.appspot.com/o/youtube%20clone%2F2.PNG?alt=media&token=77a7899d-15ff-44ad-904b-d0f87fd86453',
       ],
     },
-    {
-      id: 6,
-      title: '',
-      summery: '',
-      technologies: [''],
-      usedModules: [''],
-      live: '',
-      source:
-        'https://github.com/savindu-pasintha/Java-EE-Hospital-Project-REST-Mysql-with-Jersey',
-      image: mock2,
-      imagesUrl: [''],
-    },
+
     {
       id: 4,
       title: 'QT GUI C++ Desktop Application(China)',
@@ -826,6 +815,18 @@ export const info = {
       usedModules: [''],
       live: '',
       source: '',
+      image: mock2,
+      imagesUrl: [''],
+    },
+    {
+      id: 6,
+      title: '',
+      summery: '',
+      technologies: [''],
+      usedModules: [''],
+      live: '',
+      source:
+        'https://github.com/savindu-pasintha/Java-EE-Hospital-Project-REST-Mysql-with-Jersey',
       image: mock2,
       imagesUrl: [''],
     },

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useeffect, useState, useRef, useEffect } from 'react'
 import Style from './Home.module.scss'
 import me from '../../img/self.jpg'
 import me1 from '../../img/self1.png'
@@ -11,6 +11,8 @@ import { Box } from '@mui/material'
 import { info } from '../../info/Info'
 
 export default function Home() {
+  const tech = useRef('')
+  // useEffect(() => { setInterval(()=>{tech.current = ""},2000)}, [])
   return (
     <Box
       component={'main'}
@@ -47,7 +49,9 @@ export default function Home() {
           </span>
           <span className={Style.hand}>🤚</span>
         </h1>
+        <h3>{info?.positionTop}</h3>
         <h2>{info?.position}</h2>
+        <h3>{info?.subPosition}</h3>
         <Box component={'ul'} p={'0.8rem'}>
           {info?.miniBio.map((bio, index) => (
             <EmojiBullet key={index} emoji={bio?.emoji} text={bio?.text} />
@@ -65,6 +69,7 @@ export default function Home() {
               link={social?.link}
               icon={social?.icon}
               label={social?.label}
+              count={social?.count}
             />
           ))}
         </Box>

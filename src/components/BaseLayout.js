@@ -15,7 +15,7 @@ export default function BaseLayout() {
   }
 
   return (
-    <Box className={darkMode ? Style.dark : Style.light}>
+    <Box className={darkMode ? Style.light : Style.dark}>
       <Grid
         container
         display={'flex'}

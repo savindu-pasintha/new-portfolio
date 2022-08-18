@@ -67,11 +67,14 @@ export default function About() {
           </span>{' '}
           sudo {firstName}{' '}
         </p>
-        <p>
-          <span style={{ color: info.baseColor }}>
+        <p
+          style={{ textAlign: 'justify', fontSize: '20px', fontWeight: '800' }}
+        >
+          <span style={{ color: '#FFB200', justfyContent: 'align' }}>
             about <span className={Style.green}>(main)</span> ${' '}
           </span>
           {info.bio}
+          <span style={{ color: '#FFB200', justfyContent: 'align' }}></span>
         </p>
       </>
     )
@@ -202,21 +205,26 @@ export default function About() {
       alignItems={'center'}
       mt={'3rem'}
     >
-      <Terminal title="About" text={aboutMeText()} />
+      <Terminal
+        title="About"
+        text={aboutMeText()}
+        subTitle="Why You Should Hire Me ... "
+      />
       <Terminal
         title="Skills"
         text={skillsText()}
-        subTitle="Why You Hire Me ... "
+        subTitle="Why You Should Hire Me ... "
       />
 
       <Terminal
         title="Work History"
         text={workHistoryText({ textColor: 'black', h4: 'black' })}
-        backgroundColor="#06d6a0"
+        backgroundColor="#FFB200" //"#06d6a0"
         subTitle="More than 3 1/2 Years Experince in IT industry...."
       />
       <Terminal
         title="Education"
+        subTitle="Why You Should Hire Me ... "
         text={educationText({ textColor: 'black', h4: 'black' })}
         backgroundColor="#BD93BD"
       />
