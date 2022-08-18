@@ -26,13 +26,19 @@ export default function BaseLayout() {
         <Grid item>
           <Navbar darkMode={darkMode} handleClick={handleClick} />
         </Grid>
-        <Grid item flexGrow={1}>
-          <Routes>
-            <Route exact path={'/'} element={<Home />} />
-            <Route exact path={'/about'} element={<About />} />
-            <Route exact path={'/portfolio'} element={<Portfolio />} />
-          </Routes>
-        </Grid>
+        {navigator.onLine ? (
+          <Grid item flexGrow={1}>
+            <Routes>
+              <Route exact path={'/'} element={<Home />} />
+              <Route exact path={'/about'} element={<About />} />
+              <Route exact path={'/portfolio'} element={<Portfolio />} />
+            </Routes>
+          </Grid>
+        ) : (
+          <Grid item flexGrow={1}>
+            <h2 style={{ textAlign: 'center' }}>Network connection Losted !</h2>
+          </Grid>
+        )}
         <Grid item>
           <Box
             component={'footer'}
