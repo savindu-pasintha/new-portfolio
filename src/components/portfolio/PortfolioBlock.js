@@ -25,6 +25,7 @@ function PortfolioBlock(props) {
     technologies,
   } = props
   const [loadImages, setLoadImages] = useState('')
+  const [loaded, setLoaded] = useState(false)
   const chipsColors = [
     'default',
     'primary',
@@ -205,39 +206,63 @@ function PortfolioBlock(props) {
           paddingBottom: '1%',
         }}
       >
-        {id + 1}{`) `}
+        {id + 1}
+        {`) `}
         {title}
       </h1>
       <SimpleAccordion />
 
       {imagesUrl.length > 0 && imagesUrl[0] != '' ? (
         <>
-          <Box
-            sx={{ height: '300px', width: 1, backgroundColor: 'white' }}
-            justifyContent={'center'}
-            alignItems={'center'}
-          >
+          {loaded ? (
             <Box
-              component={'img'}
-              src={loadImages ? loadImages : imagesUrl[0]}
-              alt={''}
-              sx={{ height: '300px', width: 'auto' }}
-            />
-          </Box>
+              sx={{ height: 'auto', width: 1, backgroundColor: 'white' }}
+              justifyContent={'center'}
+              alignItems={'center'}
+            >
+              <h2
+                style={{
+                  color: 'black',
+                  fontSize: '15px',
+                  textAlign: 'center',
+                }}
+              >
+                Your Network Connection Losted !
+              </h2>
+            </Box>
+          ) : (
+            <Box
+              sx={{ height: '300px', width: 1, backgroundColor: 'white' }}
+              justifyContent={'center'}
+              alignItems={'center'}
+            >
+              <Box
+                component={'img'}
+                src={loadImages ? loadImages : imagesUrl[0]}
+                alt={''}
+                sx={{ height: '300px', width: 'auto' }}
+                onError={() => setLoaded(true)}
+              />
+            </Box>
+          )}
         </>
       ) : (
         ''
       )}
       {imagesUrl.length > 0 ? (
-        <Box
-          display={'flex'}
-          flexDirection={'column'}
-          justifyContent={'left'}
-          alignItems={'left'}
-          style={{ padding: '1%' }}
-        >
-          <ImageButtons />
-        </Box>
+        <>
+          {loaded ? null : (
+            <Box
+              display={'flex'}
+              flexDirection={'column'}
+              justifyContent={'left'}
+              alignItems={'left'}
+              style={{ padding: '1%' }}
+            >
+              <ImageButtons />
+            </Box>
+          )}
+        </>
       ) : (
         ''
       )}

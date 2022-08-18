@@ -36,7 +36,9 @@ export default function BaseLayout() {
           </Grid>
         ) : (
           <Grid item flexGrow={1}>
-            <h2 style={{ textAlign: 'center' }}>Network connection Losted !</h2>
+            <h2 style={{ textAlign: 'center' }}>
+              Your Network connection Losted !
+            </h2>
           </Grid>
         )}
         <Grid item>
