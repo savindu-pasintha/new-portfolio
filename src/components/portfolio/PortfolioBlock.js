@@ -46,7 +46,7 @@ function PortfolioBlock(props) {
           <Technologies />
         </AccordionSummary>
         <AccordionDetails>
-          <h2>{summery}</h2>
+          <h2 style={{ paddingBottom: '1%' }}>{summery}</h2>
           <UsedModules />
           <SourceCodeAndLiveDemo />
         </AccordionDetails>
@@ -89,22 +89,27 @@ function PortfolioBlock(props) {
         py={'2rem'}
       >
         {live != '' && source != null ? (
-          <Box p={1}>
-            Live
-            <IconLink link={live} title={''} icon={'fa fa-safari'} />
+          <Box p={0}>
+            <span style={{ fontSize: '15px' }}>
+              {' '}
+              Live <IconLink link={live} title={''} icon={'fa fa-safari'} />
+            </span>
           </Box>
         ) : (
           ''
         )}
         {source != '' && source != null ? (
           <Box p={1} /**border={'2px solid black'} borderRadius={'25px'} */>
-            Code{' '}
-            <IconLink
-              color="red"
-              link={source}
-              title={''}
-              icon={'fa fa-code'}
-            />
+            <span style={{ fontSize: '15px' }}>
+              {' '}
+              Code
+              <IconLink
+                color="red"
+                link={source}
+                title={''}
+                icon={'fa fa-code'}
+              />
+            </span>
           </Box>
         ) : (
           ''
