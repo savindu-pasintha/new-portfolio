@@ -10,7 +10,7 @@ const countOfProjects = info?.portfolio.length
   : ''
 const links = [
   {
-    name: 'Hi, I am here',
+    name: 'Home.',
     to: '/',
     active: 'Home',
   },
@@ -50,7 +50,7 @@ export default function Navbar({ darkMode, handleClick }) {
         justifyContent={'center'}
         alignItems={'center'}
         gap={{ xs: '2rem', md: '8rem' }}
-        textTransform={'uppercase'}
+        //textTransform={'uppercase'}
         fontSize={'1rem'}
       >
         {links.map((link, index) => (
