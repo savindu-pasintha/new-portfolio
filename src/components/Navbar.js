@@ -10,7 +10,7 @@ const countOfProjects = info?.portfolio.length
   : ''
 const links = [
   {
-    name: 'Home.',
+    name: 'Home',
     to: '/',
     active: 'Home',
   },
