@@ -10,12 +10,12 @@ const countOfProjects = info?.portfolio.length
   : ''
 const links = [
   {
-    name: 'I am',
+    name: 'Hi, I am here',
     to: '/',
     active: 'Home',
   },
   {
-    name: 'About',
+    name: 'About Me',
     to: '/about',
     active: 'About',
   },
