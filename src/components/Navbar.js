@@ -5,6 +5,9 @@ import { Link, useLocation } from 'react-router-dom'
 import { Box } from '@mui/material'
 import { info } from '../info/Info'
 
+const countOfProjects = info?.portfolio.length
+  ? `(${info?.portfolio.length + 19})`
+  : ''
 const links = [
   {
     name: 'Home',
@@ -12,7 +15,7 @@ const links = [
     active: 'Home',
   },
   {
-    name: 'See me',
+    name: 'Me',
     to: '/about',
     active: 'About',
   },
@@ -25,7 +28,7 @@ const links = [
   },
 
   {
-    name: 'Portfolio',
+    name: `Projects ${countOfProjects}`,
     to: '/portfolio',
     active: 'Portfolio',
   },
