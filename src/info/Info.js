@@ -245,7 +245,7 @@ export const info = {
   workHistory: [
     {
       id: 1,
-      role: 'Software Engineer-Frontend  (Remote)',
+      role: 'Software Engineer',
       company: 'X.O CONCEPTS (PRIVATE) LIMITED',
       location: 'No 30/81- 1/1 ,Longdon Place , Colombo 07 , Sri Lanka.',
       time: '2022',
@@ -254,7 +254,7 @@ export const info = {
     },
     {
       id: 2,
-      role: 'Freelance Software Developer (Remote)',
+      role: 'Software Developer (Remote)',
       company: 'Natobotics Technologies Pvt Ltd.',
       location:
         '#1206, 12th Floor, D-South Block, Tidel Park, Rajiv Gandhi Salai, Taramani, Chennai 600 113, india',
@@ -264,7 +264,7 @@ export const info = {
     },
     {
       id: 3,
-      role: 'Associate Software Engineer (Remote)',
+      role: 'Associate Software Engineer',
       company: 'Nvision IT Solutions (PVT) Limited',
       location: '10 Kumarage Watta Road, Sri Jayawardenepura Kotte,Sri Lanka',
       time: '2020',
@@ -273,7 +273,7 @@ export const info = {
     },
     {
       id: 4,
-      role: 'Associate DevOPS Engineer (Remote)',
+      role: 'Associate DevOPS Engineer',
       company: 'Global Wavenet International Pvt Ltd , Singappore',
       time: '2019',
       location: '',
@@ -282,7 +282,7 @@ export const info = {
     },
     {
       id: 1,
-      role: 'Freelance Software Developer',
+      role: 'Software Developer',
       company: 'Upwork.com & Fiver.com',
       location: '',
       time: '2018',
