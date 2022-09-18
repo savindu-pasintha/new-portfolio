@@ -220,7 +220,7 @@ export default function About() {
         title="Work History"
         text={workHistoryText({ textColor: 'black', h4: 'black' })}
         backgroundColor="#FFB200" //"#06d6a0"
-        subTitle="More than 3 1/2 Years Experince in IT industry...."
+        subTitle="More than 4 Years Experince in IT industry...."
       />
       <Terminal
         title="Education"
