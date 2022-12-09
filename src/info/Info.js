@@ -42,7 +42,7 @@ export const info = {
     },
     {
       emoji: '💼',
-      text: '+ 4 Year Experience',
+      text: '+ 4.5 Year Experience',
     },
 
     {
