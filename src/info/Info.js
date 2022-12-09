@@ -276,7 +276,7 @@ export const info = {
       id: 4,
       role: 'Associate DevOPS Engineer',
       company: 'Global Wavenet International Pvt Ltd , Singappore',
-      time: '2019',
+      time: '',
       location: '',
       summery:
         'USSD & IVR(Interact voice response) Systems Development AWS / NodeJs / Javascript / kapanga Tool / System Design / Machine Learning / gitbucket ',
