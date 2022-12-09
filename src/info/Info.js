@@ -210,14 +210,14 @@ export const info = {
       id: 1,
       what: 'BSC(Hons) Computing & Software Engineering',
       where: 'Cardiff Metropolitan, University, Uk',
-      time: ' 2019 - May 2021',
+      time: ' 2019',
       grade: "1'st Class",
     },
     {
       id: 2,
       what: 'Higher National Diploma in Computing & Software Engineering',
       where: 'International College Of Business & Technology, Sri Lanka',
-      time: ' 2019 - 2021',
+      time: ' 2019',
       grade: "1'st Class",
     },
     {
@@ -249,7 +249,7 @@ export const info = {
       role: 'Software Engineer',
       company: 'X.O CONCEPTS (PRIVATE) LIMITED',
       location: 'No 30/81- 1/1 ,Longdon Place , Colombo 07 , Sri Lanka.',
-      time: '2022',
+      time: '',
       summery:
         'React Multifunctional Dashboard & Desktop Applications Development using ReactJs / Node Js / Go / C++ / QT Framework / AWS / Micro services / Material / Html / CSS / Bosstrap / Style Components /Mysql / REST API / Python / Machine Learning / IOT Devices /git lab / git bucket..',
     },
@@ -259,7 +259,7 @@ export const info = {
       company: 'Natobotics Technologies Pvt Ltd.',
       location:
         '#1206, 12th Floor, D-South Block, Tidel Park, Rajiv Gandhi Salai, Taramani, Chennai 600 113, india',
-      time: '2021',
+      time: '',
       summery:
         'React Multifunctional Dashboard Development / Static Web sites /REST API / ReactJS Framework / Javascript / Typescript /Html / CSS / Boostrap /ANT Design / Material Design / Mysql / MondoDB / Azure / Clould / C# / .Net Framework / .Net core api / Python / Webscraping /github / git lab',
     },
@@ -268,7 +268,7 @@ export const info = {
       role: 'Associate Software Engineer',
       company: 'Nvision IT Solutions (PVT) Limited',
       location: '10 Kumarage Watta Road, Sri Jayawardenepura Kotte,Sri Lanka',
-      time: '2020',
+      time: '',
       summery:
         'Mobile applications development and Web applications development with Java / React Native / Flutter /git lab / git hub /Rest Services /Sqlite database / Mysql /Jet pack /room database / AWS ',
     },
@@ -286,7 +286,7 @@ export const info = {
       role: 'Software Developer',
       company: 'Upwork.com & Fiver.com',
       location: '',
-      time: '2018',
+      time: '',
       summery:
         'Full stack web & mobile applications development & Mobile app reverse engineering',
     },
