@@ -102,7 +102,7 @@ export const info = {
     // Just change the links so that they lead to your social profiles.
   ],
   bio:
-    "I'm Savindu Pasintha. I studied at Computing and Software Engineering at Cardiff Metropolitan, University, Uk. Previously,  3.5 years back I worked as a self thought software developer with Multiple orgarnizations in the world wide . Like India , USA, Singappor, United kindom , Sri  lanka , Africa , Nigeria , Morocco , Canada, and more ..., So I have great experience about the software development industry with multiple areas and I am Good team player including with multiple tech stacks.",
+    "I'm Savindu Pasintha. I studied at Computing and Software Engineering at Cardiff Metropolitan, University, Uk. Previously,  4.5 years back I worked as a self thought software developer with Multiple orgarnizations, So I have great experience about the software development and maintanances with multiple areas and I am Good team player including with multiple tech stacks.",
   skills: {
     coding: [
       '🌱 JavaScript',
@@ -138,7 +138,8 @@ export const info = {
       'Angular',
       ' Nextjs',
       ' Vuejs',
-      ' Laravel',
+      ' Electronjs',
+      ' Qt',
       'Micro-Frontend ',
       'Figma-UI',
       'Adobe-UI',
